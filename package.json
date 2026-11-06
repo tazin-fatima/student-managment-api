@@ -1,14 +1,13 @@
-
 {
   "name": "student-management-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "scripts": {
-    "start": "tsx src/index.ts",
-    "build": "tsc",
-    "dev": "tsx watch src/index.ts"
-  },
+"scripts": {
+  "start": "tsx src/index.ts",
+  "build": "tsc",
+  "dev": "nodemon --watch src --ext ts --exec tsx src/index.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,6 +18,7 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
+    "nodemon": "^3.1.14",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
